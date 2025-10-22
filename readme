@@ -1,0 +1,19 @@
+# ONG Conecta
+
+Plataforma web para ajudar ONGs a divulgar projetos, engajar voluntários e captar recursos.
+
+## Tecnologias
+
+- Frontend: HTML5, CSS3, JavaScript
+- Backend: Node.js, Express, MongoDB
+- Documentação: Markdown
+
+## Como rodar o projeto
+
+### Backend
+
+```bash
+cd backend
+npm install
+node app.js
+```
