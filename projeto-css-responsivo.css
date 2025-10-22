@@ -1,0 +1,404 @@
+:root {
+  --primary-color: #2e8b57;
+  --secondary-color: #f4f4f4;
+  --font-body: "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background: var(--secondary-color);
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #276b45;
+}
+
+#mensagem {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.projetos {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.projetos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2e8b57;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card img {
+    width: 100%;
+  }
+}
+/* ===============================
+   🌍 ONG CONECTA - STYLESHEET
+   =============================== */
+
+/* 🎨 SISTEMA DE DESIGN */
+:root {
+  /* Paleta de cores */
+  --cor-primaria: #0077cc;
+  --cor-secundaria: #00bcd4;
+  --cor-sucesso: #4caf50;
+  --cor-erro: #f44336;
+  --cor-aviso: #ff9800;
+  --cor-texto: #333;
+  --cor-fundo: #f9f9f9;
+  --cor-neutra: #ccc;
+  --cor-branca: #fff;
+
+  /* Tipografia */
+  --fonte-pequena: 14px;
+  --fonte-media: 16px;
+  --fonte-grande: 20px;
+  --fonte-titulo: 32px;
+  --fonte-extra: 48px;
+
+  /* Espaçamentos */
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}
+
+/* ===============================
+   🔤 BASE GERAL
+   =============================== */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-primaria);
+  margin-bottom: var(--esp-2);
+}
+
+p {
+  font-size: var(--fonte-media);
+  line-height: 1.6;
+  margin-bottom: var(--esp-2);
+}
+
+/* ===============================
+   🧭 CABEÇALHO E MENU
+   =============================== */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: var(--esp-2) 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--esp-3);
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Submenu dropdown */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: var(--cor-branca);
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: var(--esp-1) 0;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+  padding: var(--esp-1) var(--esp-2);
+}
+
+.submenu li a {
+  color: var(--cor-texto);
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Menu hambúrguer para mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  background: var(--cor-branca);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--cor-primaria);
+    width: 100%;
+  }
+
+  nav ul.mostrar {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: var(--esp-2);
+    right: var(--esp-2);
+  }
+}
+
+/* ===============================
+   🧱 LAYOUT PRINCIPAL (GRID)
+   =============================== */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--esp-4);
+  padding: var(--esp-4);
+}
+
+section {
+  background-color: var(--cor-branca);
+  border-radius: 8px;
+  padding: var(--esp-3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ===============================
+   💡 CARDS DE PROJETOS
+   =============================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--esp-3);
+}
+
+.card {
+  background-color: var(--cor-branca);
+  border: 1px solid var(--cor-neutra);
+  border-radius: 8px;
+  padding: var(--esp-3);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: var(--esp-2);
+}
+
+/* ===============================
+   🔘 BOTÕES
+   =============================== */
+button {
+  background: var(--cor-primaria);
+  color: var(--cor-branca);
+  border: none;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: 4px;
+  font-size: var(--fonte-media);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--cor-secundaria);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  background: var(--cor-neutra);
+  cursor: not-allowed;
+}
+
+/* ===============================
+   📱 RESPONSIVIDADE
+   =============================== */
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: var(--fonte-titulo);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--esp-2);
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: var(--fonte-grande);
+  }
+  p {
+    font-size: var(--fonte-pequena);
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    width: 100%;
+  }
+}
