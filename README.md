@@ -11,6 +11,7 @@ Este site foi criado para apresentar a ONG Conecta, seus projetos em andamento e
 
 O objetivo é facilitar a conexão entre quem deseja ajudar e quem precisa de ajuda.
 
+SPA acessível e otimizada, versionada com GitFlow.
 ---
 
 ## 🧭 Funcionalidades
@@ -19,15 +20,28 @@ O objetivo é facilitar a conexão entre quem deseja ajudar e quem precisa de aj
 - Página de **Projetos** destacando ações em andamento  
 - Página de **Cadastro de Voluntários** com formulário validado  
 - Página de **Doações** (em desenvolvimento)  
-- Design responsivo e navegação simples  
+- Design responsivo e navegação simples
+- Navegação dinâmica sem recarregar
+- Tema escuro e alto contraste
+- Suporte a teclado e leitores de tela
+- Código otimizado para produção
 
 ---
 
 ## 🖥️ Tecnologias Utilizadas
 
-- **HTML5**  
-- **CSS3**  
-- **JavaScript (ES6)**  
+- HTML5, CSS3, JS
+- Git/GitHub (GitFlow)
+- Acessibilidade WCAG 2.1 AA
+
+---
+
+## Estrutura GitFlow
+- main: versão estável
+- develop: desenvolvimento
+- feature/*: novas funcionalidades
+- release/*: preparação de versão
+- hotfix/*: correções urgentes
 
 ---
 
